@@ -9,9 +9,38 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="header" class="container-xl">Precio de metales $$$</header>
-    <canvas id="chart1" class="container-sm"></canvas>
-    <canvas id="chart2" class="container-sm"></canvas>
+    <header id="header" class="container-xl">
+        <p>
+            Consulta el precio de divisas $$$
+        </p> 
+    </header>
+
+    <div class="container-lg" id="divmx">
+        <h1 id="hmx">Dólares(USA)-Pesos(MXN)</h1>
+        <div id="grmx">
+            <label>Fecha inicio <input type="date" id="date1mx"></label><br>
+            <label>Fecha final <input type="date" id="date2mx"></label>
+        </div>
+        <canvas id="chartmx" class="container-sm"></canvas>
+    </div>    
+    
+    <div class="container-lg" id="divau">
+        <h1 id="hau">Dólares-Oro</h1>
+        <div id="grau">
+            <label>Fecha inicio <input type="date" id="date1au"></label><br>
+            <label>Fecha final <input type="date" id="date2au"></label>
+        </div>
+        <canvas id="chartau" class="container-sm"></canvas>
+    </div>
+    
+    <div class="container-lg" id="divag">
+        <h1 id="hag">Dólares-Plata</h1>
+        <div id="grag">
+            <label>Fecha inicio <input type="date" id="date1ag"></label><br>
+            <label>Fecha final <input type="date" id="date2ag"></label>
+        </div>
+        <canvas id="chartag" class="container-sm"></canvas>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
