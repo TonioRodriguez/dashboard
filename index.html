@@ -6,38 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 <body>
-    <header id="header" class="container-xl">
-        <p>
-            Consulta el precio de divisas $$$
-        </p> 
-    </header>
-
-    <div class="container-lg" id="divmx">
-        <h1 id="hmx">Dólares(USA)-Pesos(MXN)</h1>
-        <div id="grmx">
+    <section class="container-fluid" id="header">
+        <span>
+            Consulta el precio de tus metales :D
+        </span>
+    </section>
+    <div class="container-fluid" id="divmx">
+        <h1 id="hmx" class="h1">Dólares(USA)-Pesos(MXN)</h1>
+        <div id="grmx" class="div">
             <label>Fecha inicio <input type="date" id="date1mx"></label><br>
             <label>Fecha final <input type="date" id="date2mx"></label>
+            <p id="pt">Lapsos no mayores <br> a 300 dias</p>
+            <button type="button" class="btn btn-success" onclick="chartmx()">Gráfica</button>
         </div>
         <canvas id="chartmx" class="container-sm"></canvas>
     </div>    
     
-    <div class="container-lg" id="divau">
-        <h1 id="hau">Dólares-Oro</h1>
-        <div id="grau">
+    <div class="container-fluid" id="divau">
+        <h1 id="hau" class="h1">Dólares-Oro</h1>
+        <div id="grau" class="div">
             <label>Fecha inicio <input type="date" id="date1au"></label><br>
             <label>Fecha final <input type="date" id="date2au"></label>
+            <p id="pt">Lapsos no mayores <br> a 300 dias</p>
+            <button type="button" class="btn btn-success" onclick="chartau()">grafica</button>
         </div>
         <canvas id="chartau" class="container-sm"></canvas>
     </div>
     
-    <div class="container-lg" id="divag">
-        <h1 id="hag">Dólares-Plata</h1>
-        <div id="grag">
+    <div class="container-fluid" id="divag">
+        <h1 id="hag" class="h1">Dólares-Plata</h1>
+        <div id="grag" class="div">
             <label>Fecha inicio <input type="date" id="date1ag"></label><br>
             <label>Fecha final <input type="date" id="date2ag"></label>
+            <p id="pt">Lapsos no mayores <br> a 300 dias</p>
+            <button type="button" class="btn btn-success" onclick="chartag()">Gráfica</button>
         </div>
         <canvas id="chartag" class="container-sm"></canvas>
     </div>
